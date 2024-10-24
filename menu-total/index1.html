@@ -11,26 +11,31 @@
             margin: 0;
             
         }
-    body{
+    /*body{
         background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
     
-        }      
+        } */
+        
+        a  {
+            text-decoration: none;
+            color: #000;
+            margin: 5px;
+        }
 
         .container {
             margin-top: 120px;
                    }      
 
         #container1{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 10px;
+            display: flex;                    
             margin: 5px;
             gap: 5px;
+            border-bottom: 1px solid #e6e6e6;
+
             
         }
 
-        #container2{
+        /*#container2{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -48,24 +53,22 @@
             margin: 5px;
             gap: 5px;
             
-        }
+        }*/       
     
-        li{   font-size: 20px;    }
-
-        span{ 
-            color: black;
-            margin: 10px;
-        }
+        li{   font-size: 20px; 
+            list-style: none;
+            margin: 5px;
+           }        
               
         .sessao{   
             flex-grow: 1;                 
-            border: 1px solid white;          
-          
+            /*border: 1px solid white; */            
+            margin-bottom: 10px; 
+            border-left: 1px solid #e6e6e6;          
 
-        }   
-        .sessao:hover {        background-color: rgb(213, 213, 201);  }
+        }        
 
-        /*li:hover*/ a:hover, span:hover {
+        a:hover {
             background-color: blue;
             color: white;
             cursor: pointer;
@@ -78,9 +81,6 @@
          font-size: 20px;
          font-family: Arial, Helvetica, sans-serif;
         }  
-        li, a, span {
-            margin: 10px;
-        }    
         
         img{
             display: flex;
@@ -91,12 +91,7 @@
             height: 100px;
             }
          
-         .header {
-            width: 100%;
-            text-align: center;
-            background-color: chartreuse;
-            margin: 0;
-         }   
+         
 
          .menu {
           display: flex;         
@@ -113,6 +108,32 @@
          .img:hover {
 scale: 1.2;
          }
+
+         .h2 {
+            display: flex;
+            width: 100%;
+                    
+            
+         }
+
+         .texto__item {
+           background-color: #e6e6e6;
+           width: 100%;
+           text-align: center;
+           font-weight: 400;        
+            
+         }
+
+         .texto__item1 {
+           background-color: antiquewhite;
+           width: 100%;
+           text-align: center;
+           font-weight: 400;        
+            
+         }
+
+         
+        
             
          
             
@@ -127,62 +148,61 @@ scale: 1.2;
       <img class="img" src="img/reactlogo.jpg" alt="icon React">
       <img class="img" src="img/githublogo.png" alt="icon React">
       <img class="img" src="img/python.png" alt="icon React">
-    <nav>
+      <nav>
         <ul>
         <li><a href="#sessao1">1º Sessão</a></li>
         <li><a href="#sessao2">2º Sessão</a></li>
         <li><a href="#sessao3">3º Sessão</a></li>
        </ul>
-    </nav>
-</header>
+      </nav>
+     </header>
     <div class="container">
 
-     <!--//////////////////////////Sessão 01 veja//////////////////////////////////////////////////////////-->   
+     <!--//////////////////////////Sessão 01 veja exercicios////////////////////////////////////////////////-->   
     
-        <section id="container1">
-          <header class="header">
-           <h2 id="sessao1">1º Sessão</h2>
-        </header>
-    <div id="n1" class="sessao">
-        <h2>Nivel 1: JavaScript (Curso em Vídeo)</h2>
-        <p>Básico</p>
-    <ol>
-       <li><a href="Nivel-01/ex001.html">Ex001:<span>Olá, Mundo!</span></a></li>       
-       <li><a href="Nivel-01/ex002.html">Ex002:<span>Interagindo com Botão</span> </a></li>       
-       <li><a href="Nivel-01/ex003.html">Ex003:<span>Usando o prompt() e o Alert juntos</span></a></li>       
-       <li><a href="Nivel-01/ex004.html">Ex004:<span>Interagindo com parte do HTML(DOM)</span></a></li>
-       <li><a href="Nivel-01/ex005.html">Ex005:<span>Manipulando números</span></a></li>
-       <li><a href="Nivel-01/ex006.html">Ex006:<span>Somando dois números</span></a></li>       
-       <li><a href="Nivel-01/ex007.html">Ex007:<span>Calculando a média do aluno</span></a></li>                 
-       <li><a href="Nivel-01/ex008.html">Ex008:<span>Vários cálculos em JS</span></a></li>
-       <li><a href="Nivel-01/ex009.html">Ex009:<span>Contador de cliques</span></a></li>
-       <li><a href="Nivel-01/ex010.html">Ex010:<span>Usando um JavaScript externo</span></a></li>       
-    </ol>
-</div>
+     <div class="h2">
+        <h2 class="texto__item1"><span>Sessão:</span> <span>Exercícios</span> <span>JavaScript</span><span> Curso em Video</span></h2>
+      </div>   
+     <section id="container1">   
+                
+     <div id="n1" class="sessao">
+           
+     <ul>
+       <li><a href="Nivel-01/ex001.html">Ex001: Olá, Mundo!</a></li>       
+       <li><a href="Nivel-01/ex002.html">Ex002: Interagindo com Botão</a></li>       
+       <li><a href="Nivel-01/ex003.html">Ex003: Usando o prompt() e o Alert juntos</a></li>       
+       <li><a href="Nivel-01/ex004.html">Ex004: Interagindo com parte do HTML(DOM)</a></li>
+       <li><a href="Nivel-01/ex005.html">Ex005: Manipulando números</a></li>
+       <li><a href="Nivel-01/ex006.html">Ex006: Somando dois números</a></li>       
+       <li><a href="Nivel-01/ex007.html">Ex007: Calculando a média do aluno</a></li>                 
+       <li><a href="Nivel-01/ex008.html">Ex008: Vários cálculos em JS</a></li>
+       <li><a href="Nivel-01/ex009.html">Ex009: Contador de cliques</a></li>
+       <li><a href="Nivel-01/ex010.html">Ex010: Usando um JavaScript externo</a></li>       
+     </ul>
+     </div>
 
-<div id="n2" class="sessao">
-    <h2>Nivel 2: JavaScript (Curso em Vídeo)</h2>
-    <p>Condições</p>
+   <div id="n2" class="sessao">
+    
     <ol>
        <li><a href="Nivel-02/ex011.html">Ex011:<span>Calculando Média e dando Parabéns</span></a></li>       
        <li><a href="Nivel-02/ex012.html">Ex012:<span>É par ou é impar?</span> </a></li>       
        <li><a href="Nivel-02/ex013.html">Ex013:<span>Qual é o maior?</span> </a></li>       
        <li><a href="Nivel-02/ex014.html">Ex014:<span>Interagindo com o Sistema</span></a></li>
        <li><a href="Nivel-02/ex015.html">Ex015:<span>Analisando data e hora</span></a></li>
-       <li><a href="C:\Users\paulo\Documents\Estudo\javascript\exercicio\aula15\exrc15.html">Ex016:<span>Calculando a idade </span></a></li>       
+       <li><a href="C:\Users\paulo\Documents\Estudo\javascript\exercicio\aula15\exrc15.html">Ex016:<span>Calculando a 
+          idade </span></a></li>       
        <li><a href="Nivel-02/ex017.html">Ex017:<span>Sorteador de números</span></a></li>                 
        <li><a href="Nivel-02/ex018.html">Ex018:<span>Jogo da adivinhação</span></a></li>
        <li><a href="Nivel-02/ex019.html">Ex019:<span>O usuário escolhe o cálculo</span></a></li>
        <li><a href="Nivel-02/ex020.html">Ex020:<span>Estações do ano</span></a></li>
        
-    </ol>
-</div>
-<div id="n3" class="sessao">
-    <h2>Nivel 3:JavaScript (Curso em Vídeo)</h2>
-    <p>Repetições</p>
-
+     </ol>
+    </div>
+   <div id="n3" class="sessao">
+    
     <ol>
-       <li><a href="C:\Users\paulo\Documents\Estudo\javascript\exercicio\aula13\contador\contador.html">Ex021:<span>Super Contador</span></a></li>       
+       <li><a href="C:\Users\paulo\Documents\Estudo\javascript\exercicio\aula13\contador\contador.html">Ex021: 
+         <span>Super Contador</span></a></li>       
        <li><a href="">Ex022:<span>1234567891011121314151</span> </a></li>       
        <li><a href="">Ex023:<span></span>ok </a></li>       
        <li><a href="">Ex024:<span></span></a></li>
@@ -194,44 +214,177 @@ scale: 1.2;
        <li><a href="">Ex030:<span></span></a></li>
      
     </ol>
-</div>
-<div id="n4" class="sessao">
-    <h2>Nivel 4:JavaScript (Curso em Vídeo)</h2>
-    <p>Outros</p>
-    <ul>
-       <li><a href="Nivel-04/ex031.html">Ex031:<span>Calculando Números </span></a></li>       
-       <li><a href="Nivel-04/ex032.html">Ex032:<span> com botão</span></a></li>       
-       <li><a href="Nivel-04/ex033.html">Ex033:<span>Varios Exercícios</span></a></li>       
-       <li><a href="Nivel-04/exe34.html">Ex034:<span>Detran</span></a></li>
-       <li><a href="Nivel-04/relogio/index.html">Ex035:<span>Relógio Digital</span></a></li>
-       <li><a href="Nivel-04/aulaDom/index.html">Ex036:<span> Aula de DOM</span> </a></li>       
-       <li><a href="C:\Users\paulo\Documents\Estudo\javascript\exercicio\aula14\hora.html">Ex037:<span>Hora do dia</span></a></li>                 
-       <li><a href="modelo/modelo.html">Ex038:<span></span></a></li>
-       <li><a href="">Ex039:<span></span></a></li>
-       <li><a href="aula12/exerc12.html">Ex040:<span>Votoaçã</span></a></li> 
+  </div>
+</section> 
+<!--------------------------------------sessaa 2 desfios js curso em video ------------------------------------------>
+<div class="h2">
+    <h2  class="texto__item" ><span>Sessão:</span> <span>Desafios</span> <span>JavaScript</span><span> Curso em Video</span> </h2>
+  </div>   
+ <section id="container1">   
             
-    </ul>
-</div>
-<div id="n5" class="sessao">
-    <h2>Nivel 5: HTML-CSS e JS </h2>
-    <p>Dio </p>
-    <ol>
-       <li><a href="">Ex041:<span></span>Preço da Viagem </a></li>       
-       <li><a href=""><span></span></a></li>       
-       <li><a href=""><span></span></a></li>       
-       <li><a href=""><span></span></a></li>
-       <li><a href=""><span></span></a></li>
-       <li><a href=""><span></span> </a></li>       
-       <li><a href=""><span></span></a></li>                 
-       <li><a href=""><span></span></a></li>
-       <li><a href=""><span></span></a></li>
-       <li><a href=""><span></span></a></li> 
-           
-    </ol>
-</div>
+ <div id="n1" class="sessao">
+   
+ <ul>
+   <li><a href="">Desf001:<span></span></a></li>       
+   <li><a href="">Desf002:<span></span> </a></li>       
+   <li><a href="">Desf003:<span></span></a></li>       
+   <li><a href="">Desf004:<span></span></a></li>
+   <li><a href="">Desf005:<span></span></a></li>
+   <li><a href="">Desf006:<span></span></a></li>       
+   <li><a href="">Desf007:<span></span></a></li>                 
+   <li><a href="">Desf008:<span></span></a></li>
+   <li><a href="">Desf009:<span></span></a></li>
+   <li><a href="">Desf010:<span></span></a></li>       
+ </ul>
+ </div>
 
-</section>
-<!--/////////////////////////Sessão 02/////////////////////////////////////////////////-->
+<div id="n2" class="sessao">
+
+<ol>
+   <li><a href="">Desf011:<span></span></a></li>       
+   <li><a href="">Desf012:<span></span> </a></li>       
+   <li><a href="">Desf013:<span></span> </a></li>       
+   <li><a href="">Desf14:<span></span></a></li>
+   <li><a href="">Desf015:<span></span></a></li>
+   <li><a href="">Desf016:<span></span></a></li>       
+   <li><a href="">Desf017:<span></span></a></li>                 
+   <li><a href="">Desf018:<span></span></a></li>
+   <li><a href="">Desf019:<span></span></a></li>
+   <li><a href="">Desf020:<span></span></a></li>
+   
+ </ol>
+</div>
+<div id="n3" class="sessao">
+
+<ol>
+   <li><a href="">Desf021:<span></span></a></li>       
+   <li><a href="">Desf022:<span></span></a></li>       
+   <li><a href="">Desf023:<span></span></a></li>       
+   <li><a href="">Desf024:<span></span></a></li>
+   <li><a href="">Desf025:<span></span></a></li>
+   <li><a href="">Desf026:<span></span></a></li>       
+   <li><a href="">Desf027:<span></span></a></li>                 
+   <li><a href="">Desf028:<span></span></a></li>
+   <li><a href="">Desf029:<span></span></a></li>
+   <li><a href="">Desf030:<span></span></a></li>
+ 
+</ol>
+</div>
+</section> 
+<!--------------------------------------sessaa 3 exercicos  html/css curso em video---------------------------------->
+<div class="h2">
+    <h2  class="texto__item1" ><span>Sessão:</span> <span> Exercícios</span> <span>HTML&CSS</span><span> Curso em Video</span> </h2>
+  </div>   
+ <section id="container1">   
+            
+ <div id="n1" class="sessao">
+    
+    
+ <ul>
+   <li><a href="">Exc001:<span></span></a></li>       
+   <li><a href="">Desf002:<span></span> </a></li>       
+   <li><a href="">Desf003:<span></span></a></li>       
+   <li><a href="">Desf004:<span></span></a></li>
+   <li><a href="">Desf005:<span></span></a></li>
+   <li><a href="">Desf006:<span></span></a></li>       
+   <li><a href="">Desf007:<span></span></a></li>                 
+   <li><a href="">Desf008:<span></span></a></li>
+   <li><a href="">Desf009:<span></span></a></li>
+   <li><a href="">Desf010:<span></span></a></li>       
+ </ul>
+ </div>
+
+<div id="n2" class="sessao">
+
+   <li><a href="">Desf011:</a></li>       
+   <li><a href="">Desf012:</a></li>       
+   <li><a href="">Desf013:</a></li>       
+   <li><a href="">Desf14:</a></li>
+   <li><a href="">Desf015:</a></li>
+   <li><a href="">Desf016:</a></li>       
+   <li><a href="">Desf017:</a></li>                 
+   <li><a href="">Desf018:</a></li>
+   <li><a href="">Desf019:</a></li>
+   <li><a href="">Desf020:</a></li>
+   
+ </ol>
+</div>
+<div id="n3" class="sessao">
+
+
+<ol>
+   <li><a href="">Desf021:</a></li>       
+   <li><a href="">Desf022:</a></li>       
+   <li><a href="">Desf023:</a></li>       
+   <li><a href="">Desf024:</a></li>
+   <li><a href="">Desf025:</a></li>
+   <li><a href="">Desf026:</a></li>       
+   <li><a href="">Desf027:</a></li>                 
+   <li><a href="">Desf028:</a></li>
+   <li><a href="">Desf029:</a></li>
+   <li><a href="">Desf030:</a></li>
+ 
+</ol>
+</div>
+</section> 
+<!--------------------------------------sessaa 3 desfios html/css curso em video---------------------------------->
+<div class="h2">
+    <h2  class="texto__item" ><span>Sessão:</span> <span>Desafios</span> <span>HTML&CSS</span><span> Curso em Video</span> </h2>
+  </div>   
+ <section id="container1">   
+            
+ <div id="n1" class="sessao">
+  
+    
+ <ul>
+   <li><a href="">Desf001:<span></span></a></li>       
+   <li><a href="">Desf002:<span></span> </a></li>       
+   <li><a href="">Desf003:<span></span></a></li>       
+   <li><a href="">Desf004:<span></span></a></li>
+   <li><a href="">Desf005:<span></span></a></li>
+   <li><a href="">Desf006:<span></span></a></li>       
+   <li><a href="">Desf007:<span></span></a></li>                 
+   <li><a href="">Desf008:<span></span></a></li>
+   <li><a href="">Desf009:<span></span></a></li>
+   <li><a href="">Desf010:<span></span></a></li>       
+ </ul>
+ </div>
+
+<div id="n2" class="sessao">
+
+<ol>
+   <li><a href="">Desf011:<span></span></a></li>       
+   <li><a href="">Desf012:<span></span> </a></li>       
+   <li><a href="">Desf013:<span></span> </a></li>       
+   <li><a href="">Desf14:<span></span></a></li>
+   <li><a href="">Desf015:<span></span></a></li>
+   <li><a href="">Desf016:<span></span></a></li>       
+   <li><a href="">Desf017:<span></span></a></li>                 
+   <li><a href="">Desf018:<span></span></a></li>
+   <li><a href="">Desf019:<span></span></a></li>
+   <li><a href="">Desf020:<span></span></a></li>
+   
+ </ol>
+</div>
+<div id="n3" class="sessao">
+
+<ol>
+   <li><a href="">Desf021:</a></li>       
+   <li><a href="">Desf022:</a></li>       
+   <li><a href="">Desf023:<span></span></a></li>       
+   <li><a href="">Desf024:<span></span></a></li>
+   <li><a href="">Desf025:<span></span></a></li>
+   <li><a href="">Desf026:<span></span></a></li>       
+   <li><a href="">Desf027:<span></span></a></li>                 
+   <li><a href="">Desf028:<span></span></a></li>
+   <li><a href="">Desf029:<span></span></a></li>
+   <li><a href="">Desf030:<span></span></a></li>
+ 
+</ol>
+</div>
+</section> 
+
+<!--/////////////////////////Sessão 02/////////////////////////////////////////////////
 <section id="container2">
     <header class="header">
         <h2 id="sessao2">2º Sessão</h2>
@@ -320,8 +473,8 @@ scale: 1.2;
        <li><a href="">Desaf22<span></span></a></li>      
     </ol>
 </div>
-</section>
-<!--///////////////Sessão 3 Projetos /////////////////////////////////////////////////////////////-->
+</section>--->
+<!--///////////////Sessão 3 Projetos /////////////////////////////////////////////////////////////
 <section id="container3">
     <header class="header">
         <h2 id="sessao3"><a href="">3º Sessão Projetos </a></h2>
@@ -435,7 +588,7 @@ scale: 1.2;
            <li><a href=""><span></span></a></li>      
         </ol>
     </div>
-</section>
+</section>---->
 
 </div>
     
